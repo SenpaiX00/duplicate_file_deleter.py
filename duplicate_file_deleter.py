@@ -7,7 +7,7 @@ FILE_HASH_DICTIONARY = {}
 copies = []
 
 def dubs():
-    LIST_OF_FILES =os.listdir('/Users/simoaugu/PycharmProjects/untitled')
+    LIST_OF_FILES =os.listdir('DIRECTORY HERE!')
     #print("\n".join(files))
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
     for file in files:
