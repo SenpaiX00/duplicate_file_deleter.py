@@ -6,7 +6,7 @@ FILE_HASH_DICTIONARY = {}
 duplicates = []
 
 def dubs():
-    LIST_OF_FILES =os.listdir('/Users/simoaugu/PycharmProjects/untitled')
+    LIST_OF_FILES =os.listdir('PRESENT_WORKING_DIRECTORY_GOES_HERE')
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
     for file in files:
         hash(str(file))
