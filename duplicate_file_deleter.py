@@ -48,4 +48,4 @@ if __name__ == '__main__':
     #print(FILE_HASH_DICTIONARY)
     deal_with_dubs()
     delete_copies()
-    print(os.listdir('/Users/simoaugu/PycharmProjects/untitled'))
+    print(os.listdir('PRESENT_WORKING_DIRECTORY_GOES_HERE'))
