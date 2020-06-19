@@ -13,9 +13,6 @@ def dubs():
         p = p+f
         if os.path.isfile(p):
             Test.append(p)
-    #for f in Test:
-        #print f
-    #files = [f for f in os.listdir('/Users/simoaugu/Downloads') if os.path.isfile(f)]
     for file in Test:
         hash(str(file))
 
