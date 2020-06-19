@@ -9,7 +9,7 @@ Test = []
 def dubs():
     LIST_OF_FILES =os.listdir('HERE') #-----------------CHANGE
     for f in LIST_OF_FILES:
-        p = 'HERE' #-----------------CHANGE
+        p = 'HERE' #-----------------CHANGE - must append / to end of path
         p = p+f
         if os.path.isfile(p):
             Test.append(p)
@@ -33,6 +33,7 @@ def hash(file):
 
 def deal_with_dubs():
     hash_to_names = defaultdict(list)
+    #copies = [] ---> sometimes pythin needs copies to be declared, so if you get 
     for name, hash_k in FILE_HASH_DICTIONARY.items():
         hash_to_names[hash_k].append(name)
         copies = []
