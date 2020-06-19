@@ -4,11 +4,19 @@ from collections import defaultdict
 LIST_OF_FILES =[]
 FILE_HASH_DICTIONARY = {}
 duplicates = []
+Test = []
 
 def dubs():
-    LIST_OF_FILES =os.listdir('PRESENT_WORKING_DIRECTORY_GOES_HERE')
-    files = [f for f in os.listdir('.') if os.path.isfile(f)]
-    for file in files:
+    LIST_OF_FILES =os.listdir('HERE') #-----------------CHANGE
+    for f in LIST_OF_FILES:
+        p = 'HERE' #-----------------CHANGE
+        p = p+f
+        if os.path.isfile(p):
+            Test.append(p)
+    #for f in Test:
+        #print f
+    #files = [f for f in os.listdir('/Users/simoaugu/Downloads') if os.path.isfile(f)]
+    for file in Test:
         hash(str(file))
 
 
@@ -48,4 +56,6 @@ if __name__ == '__main__':
     #print(FILE_HASH_DICTIONARY)
     deal_with_dubs()
     delete_copies()
-    print(os.listdir('PRESENT_WORKING_DIRECTORY_GOES_HERE'))
+    print(os.listdir('HERE')) #-----------------CHANGE
+
+
