@@ -30,7 +30,7 @@ def hash(file):
 
 def deal_with_dubs():
     hash_to_names = defaultdict(list)
-    #copies = [] ---> sometimes pythin needs copies to be declared, so if you get 
+    #copies = [] ---> sometimes python needs copies to be declared, so if you get an error, just uncomment here
     for name, hash_k in FILE_HASH_DICTIONARY.items():
         hash_to_names[hash_k].append(name)
         copies = []
